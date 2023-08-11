@@ -1,0 +1,204 @@
+.main {
+  &.main-basic {
+    .main-wrap {
+      text-align: center;
+    
+      .title {
+        font-size: 3.375rem;
+        font-weight: 700;
+        line-height: 1.2;
+        background-image: linear-gradient(94deg, #f63154 0%, #af29df 101%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        word-break: keep-all;
+        
+        img {
+          width: 3.5rem;
+          height: 4.6444rem;
+          margin-right: 1.75rem;
+        }
+      }
+    
+      .desc {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.4;
+        max-width: 31rem;
+        margin: 0 auto;
+        margin-top: 1.75rem;
+        word-break: keep-all;
+    
+        strong {
+          font-weight: 700;
+        }
+      }
+    
+      .example-item-wrap {
+        margin-top: 3.75rem;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 3.375rem;
+          height: 3.375rem;
+          background: url('../images/main/bg_main_quote1.png') center/cover no-repeat;
+          position: absolute;
+          top: -42px;
+          left: -60px;
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 3.375rem;
+          height: 3.375rem;
+          background: url('../images/main/bg_main_quote2.png') center/cover no-repeat;
+          position: absolute;
+          bottom: -40px;
+          right: -60px;
+        }
+    
+        .example-item {
+          a {
+            display: block;
+            min-height: 8.5rem;
+            background-color: #fff;
+            box-shadow: 0 12px 14px 0 rgba(175, 167, 169, 0.12);
+            border-radius: .875rem;
+            padding: 1.25rem;
+            text-align: left;
+    
+            img {
+              width: 2.625rem;
+              height: 2.625rem;
+              object-fit: cover;
+            }
+    
+            .example-txt {
+              font-size: 1rem;
+              font-weight: 600;
+              color: #222;
+              line-height: 1.3;
+              margin-top: 1rem;
+              word-break: keep-all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .main {
+    &.main-basic {
+      .main-wrap {
+        .example-item-wrap {
+          &::before {
+            top: -54px;
+            left: 0;
+          }
+
+          &::after {
+            bottom: -56px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 842.98px) {
+  .main {
+    &.main-basic {
+      .main-wrap {
+        .example-item-wrap {
+          .example-item {
+            a {
+              min-height: 10.1875rem;
+  
+              .example-txt {
+                margin-top: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    &.main-basic {
+      .main-wrap {
+        // background: url('../images/main/bg_main_mo.png') center/cover no-repeat;
+        // padding: 3.75rem 1.125rem;
+  
+        .title {
+          font-size: 2.25rem;
+
+          img {
+            width: 3.3125rem;
+            height: 4.3956rem;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: .75rem;
+          }
+        }
+  
+        .desc {
+          font-size: 1rem;
+          max-width: 18.75rem;
+        }
+  
+        .example-item-wrap {
+          margin-top: 4.625rem;
+          flex-direction: column;
+  
+          .example-item {
+            width: 100%;
+  
+            a {
+              min-height: auto;
+              padding: 1.25rem 4rem;
+              text-align: center;
+  
+              img {
+                width: 2.25rem;
+                height: 2.25rem;
+              }
+  
+              .example-txt {
+                font-size: .875rem;
+                margin-top: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576.98px) {
+}
+

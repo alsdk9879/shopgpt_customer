@@ -1,0 +1,132 @@
+.body-wrap {
+  .login-wrap {
+    &.join {
+      .agree-terms {
+        margin-top: 1.875rem;
+        text-align: left;
+
+        .checkbox {
+          margin-top: .875rem;
+
+          .label-checkbox {
+            line-height: 1.2;
+            align-items: flex-start;
+
+            a {
+              font-weight: 500;
+              color: #F63154;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .input-info {
+        margin-top: 1.125rem;
+        padding-top: 1.125rem;
+        border-top: 1px solid rgba(221, 221, 221, 0.5);
+
+        .inputbox {
+          margin-top: 1.375rem;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:nth-child(2) {
+            margin-bottom: 0;
+
+            input {
+              padding: 0 .875rem;
+            }
+          }
+
+          .verify-wrap {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          }
+
+          .btn-duplication {
+            height: 2.875rem;
+            border: 1px solid #F63154;
+            background-color: #fff;
+            padding: 0 .875rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #F63154;
+            border-radius: .25rem;
+            flex: none;
+
+            &:disabled {
+              border-color: #FFAEBC;
+              color: #FFAEBC;
+            }
+          }
+
+          &.is-invalid {
+            .invalid-feedback {
+              display: block;
+            }
+          }
+        }
+
+        .authentication {
+          margin-top: .5rem;
+
+          .btn-resend {
+            margin-top: .5rem;
+          }
+        }
+      }
+
+      .btn-underline {
+        a {
+          &:first-child {
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+
+    &.join-default {
+      .info-policy {
+        margin-top: 9.6719rem;
+      }
+    }
+  }
+}
+
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 576.98px) {
+}
+
+@media (max-height: 899.98px) {
+  .body-wrap {
+    .login-wrap {
+      &.join-default {
+        .info-policy {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+}

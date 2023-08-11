@@ -1,0 +1,330 @@
+.body-wrap {
+  .login-wrap {
+    text-align: center;
+    padding: 0 1.125rem;
+  
+    .containers-s {
+      min-height: calc(100vh - 4.7244rem);
+      padding-top: 12.805rem;
+    }
+  
+    .logo {
+      width: 17.8125rem;
+      height: 4.4531rem;
+      display: block;
+      margin: 0 auto;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      background-image: linear-gradient(94deg, #f63154 0%, #af29df 101%);
+      color: transparent;
+      line-height: 1.2;
+      background-clip: text;
+      -webkit-background-clip: text;
+      letter-spacing: -0.04em;
+      margin-top: 2.5rem;
+      word-break: keep-all;
+    }
+  
+    .desc {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #222;
+      line-height: 1.4;
+      max-width: 18.75rem;
+      margin: .75rem auto 0;
+  
+      strong {
+        font-weight: 700;
+      }
+    }
+  
+    .loginbox {
+      margin-top: 1.875rem;
+    }
+  
+    .inputbox {
+      margin-top: .625rem;
+  
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 3.375rem;
+
+        input {
+          padding: 0 2.875rem 0 0.875rem;
+        }
+      }
+  
+      &.id{
+        &.is-invalid {
+          + .inputbox {
+            margin-bottom: 0;
+          }
+  
+          ~ .invalid-feedback-wrap {
+            margin-bottom: .625rem;
+  
+            .invalid-feedback {
+              &:first-child {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+  
+      &.pw {
+        &.is-invalid {
+          margin-bottom: 0;
+  
+          ~ .invalid-feedback-wrap {
+            margin-bottom: .625rem;
+  
+            .invalid-feedback {
+              &:first-child {
+                display: none;
+              }
+  
+              &:last-child {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .invalid-feedback-wrap {
+      margin-top: .5rem;
+    }
+  
+    .remember-me {
+      text-align: left;
+      margin-bottom: .5rem;
+    }
+  
+    .btn-join {
+      margin-top: 1.875rem;
+    }
+  
+    .btn-underline {
+      margin-top: 1.5rem;
+  
+      a {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #222;
+        text-decoration: underline;
+  
+        &:first-child {
+          &::after {
+            content: "";
+            display: inline-block;
+            border-right: 1px solid #BABABA;
+            height: .8125rem;
+            padding-right: 1rem;
+            margin-right: .75rem;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  
+    .social-login,
+    .social-join {
+      margin-top: 2.375rem;
+  
+      button {
+        width: 100%;
+        height: 2.875rem;
+        border-radius: .25rem;
+        background-color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        margin-top: .5rem;
+        padding: .5625rem 1.25rem;
+        position: relative;
+  
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1.75rem;
+          height: 1.75rem;
+          background: url('../images/login/icon_apple.png') center/cover no-repeat;
+          position: absolute;
+          top: .5625rem;
+          left: 1.25rem;
+        }
+  
+        &:first-child {
+          background-color: #FAE300;
+          color: #391B1B;
+  
+          &::before {
+            background-image: url('../images/login/icon_kakaotalk.png');
+          }
+        }
+  
+        &:nth-child(2) {
+          background-color: #04CF5C;
+          
+          &::before {
+            background-image: url('../images/login/icon_naver.png');
+          }
+        }
+      }
+    }
+  
+    .social-join {
+      position: relative;
+      margin-top: 1.75rem;
+  
+      &::before {
+        content: "간편가입";
+        display: block;
+        width: 5.0625rem;
+        background-color: #fff;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #222;
+      }
+      
+      &::after {
+        content: "";
+        display: block;
+        border-top: 1px solid #DDDDDD;
+        position: absolute;
+        top: .375rem;
+        width: 100%;
+      }
+  
+      button {
+        &:first-child {
+          margin-top: 1.25rem;
+        }
+      }
+    }
+  
+    .info-policy {
+      font-size: .75rem;
+      font-weight: 600;
+      color: #777;
+      line-height: 1.3;
+      width: 100%;
+      padding-bottom: 1.875rem;
+  
+      .policy {
+        text-decoration: underline;
+        margin-left: .75rem;
+  
+        &:first-of-type {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+
+    &.join-type {
+      .containers-s {
+        padding-top: 18.4612rem;
+      }
+    }
+
+    .invalid-feedback {
+      text-align: left;
+      font-size: .875rem;
+      font-weight: 400;
+      color: #FF5A5A;
+      margin-top: .5rem;
+      line-height: 1.3;
+    }
+  }
+}
+
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .body-wrap {
+    .login-wrap {
+      .info-policy {
+        margin-top: 1.875rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576.98px) {
+  .body-wrap {
+    .login-wrap {
+      .containers-s {
+        min-height: calc(100vh - 6.9494rem);
+      }
+  
+      .info-policy {
+        position: static;
+        transform: translateX(0);
+        margin-top: 2.375rem;
+  
+        .copyright {
+          display: block;
+          margin-bottom: .75rem;
+        }
+  
+        .policy {
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399.98px) {
+  .body-wrap {
+    .login-wrap {
+      .title {
+        max-width: 17.5rem;
+        margin: 2.5rem auto 0;
+      }
+    }
+  }
+}
+
+@media (max-height: 899.98px) {
+  .body-wrap {
+    .login-wrap {
+      .containers-s {
+        padding-top: 7.25rem !important;
+      }
+    }
+  }
+}

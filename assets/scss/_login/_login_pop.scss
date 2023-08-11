@@ -1,0 +1,129 @@
+.pop-join-incomplete {
+  .modal-content {
+    .desc {
+      word-break: keep-all;
+    }
+  }
+}
+
+.pop-terms,
+.pop-privacy-policy {
+  .modal-content {
+    .modal-header {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .modal-body {
+      max-height: 26.3125rem;
+      scrollbar-color: #888 transparent;
+      scrollbar-width: thin;
+      padding-top: 0;
+      margin-top: 1rem;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 0.625rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .terms-list:not(:first-child) {
+        margin-top: 1.25rem;
+      }
+
+      .title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #222;
+        letter-spacing: -0.03rem;
+      }
+
+      .desc {
+        margin-top: 0.5rem;
+        color: #222;
+        letter-spacing: -0.03rem;
+      }
+    }
+  }
+}
+
+.pop-privacy-policy {
+  .modal-content {
+    .modal-body {
+      scroll-behavior: smooth;
+
+      .terms-list {
+        &:first-child {
+          .desc {
+            margin-top: 0;
+          }
+        }
+
+        &.addendum {
+          margin-top: 2.5rem;
+        }
+
+        .title-list {
+          margin-top: 1rem;
+
+          .title-list-item {
+            a {
+              font-weight: 600;
+              color: #222;
+              margin-top: 0.5rem;
+              display: block;
+            }
+          }
+        }
+
+        .txt {
+          padding-left: 0.875rem;
+          letter-spacing: -0.03rem !important;
+          margin-top: 0.125rem;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 576.98px) {
+}
+
+@media (max-width: 399.98px) {
+  .pop-not-duplicate-id {
+    .modal-content {
+      .modal-footer {
+        .btns {
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
+}

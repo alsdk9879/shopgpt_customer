@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Shop GPT AI</title>
+</head>
+<body class="login-content">
+  <div class="body-wrap">
+    <div class="login-wrap join join-default">
+      <div class="containers-s">
+        <a href="#" class="logo"><img src="../../images/common/img_logo.png" alt="img-logo"></a>
+        <h5 class="title">합리적인 패셔니스타의 AI 코디!</h5>
+        <p class="desc"><strong>이메일</strong>만으로, 또는 <strong>소셜 계정</strong>으로 간편하게 가입하실 수 있습니다.</p>
+
+        <div class="agree-terms">
+          <span class="txt">약관 동의</span>
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" checked/>
+            <span class="label-checkbox">
+              <div class="txt-wrap">
+                <a href="#">이용약관</a>을 숙지하고, 동의합니다. (필수)</span>
+              </div>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox"/>
+            <span class="label-checkbox">
+              <div class="txt-wrap">
+                <a href="#">개인정보처리방침</a>을 숙지하고, 동의합니다. (필수)</span>
+              </div>
+          </label>
+        </div>
+
+        <!-- validation check :: 에러시 'inputbox' 클래스에 'is-invalid' 클래스 할당 -->
+        <div class="input-info">
+          <!-- 이메일 인증 -->
+          <div class="inputbox">
+            <span class="txt">이메일 ID (필수)</span>
+            <div class="verify-wrap">
+              <input type="email" placeholder="이메일 주소를 입력해 주세요.">
+              <button type="button" class="btn-duplication">이메일 인증</button>
+            </div>
+          </div>
+          <!-- 인증번호 확인 :: s -->
+          <div class="authentication">
+            <div class="inputbox is-invalid" id="validationAuthNum">
+              <div class="verify-wrap">
+                <input type="text" placeholder="인증번호 6자리를 입력해 주세요.">
+                <button type="button" class="btn-duplication" disabled >인증번호 확인</button>
+              </div>
+              <div id="validationAuthNum" class="invalid-feedback">인증번호를 다시 입력해주세요.</div>
+            </div>
+            <button type="button" class="btns btn-resend" disabled >재발송</button>
+          </div>
+          <!-- 인증번호 확인 :: e -->
+
+          <div class="inputbox is-invalid" id="validationEditPw">
+            <span class="txt">보조 이메일 (필수)</span>
+            <div class="verify-wrap">
+              <input type="email" placeholder="보조 이메일 주소를 입력해 주세요.">
+              <button type="button" class="btn-duplication" disabled >중복 확인</button>
+            </div>
+            <div id="validationEditPw" class="invalid-feedback">이미 등록된 이메일입니다. 다른 이메일 주소를 입력해 주세요.</div>
+          </div>
+          <div class="inputbox is-invalid" id="validationPw">
+            <span class="txt">비밀번호 (필수)</span>
+            <input type="password" placeholder="영문/숫자/특수문자 조합 최소8자리 이상">
+            <div id="validationPw" class="invalid-feedback">비밀번호 설정 형식에 맞지 않습니다.</div>
+          </div>
+          <div class="inputbox is-invalid" id="validationVerifyPw">
+            <span class="txt">비밀번호 확인 (필수)</span>
+            <input type="password" placeholder="비밀번호를 한번 더 입력해 주세요.">
+            <div id="validationVerifyPw" class="invalid-feedback">앞서 입력한 비밀번호와 일치하지 않습니다.</div>
+          </div>
+          <div class="inputbox">
+            <span class="txt">닉네임 (선택)</span>
+            <input type="text" placeholder="한글 16자리 이하로 입력해 주세요.">
+          </div>
+          <div class="inputbox is-invalid" id="validationPhone2">
+            <span class="txt">휴대폰 번호 (선택)</span>
+            <input type="tel" placeholder="‘-’를 제외한 숫자만 입력해 주세요.">
+            <div id="validationPhone2" class="invalid-feedback">올바른 휴대폰 번호 형식으로 입력해 주세요.</div>
+          </div>
+        </div>
+        
+        <button type="button" class="btns btn-join">회원가입</button>
+        <div class="btn-underline">
+          <a href="#">다른 방법으로 가입하기</a>
+        </div>
+      </div>
+      <div class="info-policy">
+        <span class="copyright">Copyright ⓒ Infinitum. All rights reserved.</span>
+        <a href="#" class="policy">이용약관</a>
+        <a href="#" class="policy">개인정보처리방침</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="../../libs/swiper/swiper-bundle.min.js"></script>
+  <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../../js/common.js"></script>
+</body>
+</html>

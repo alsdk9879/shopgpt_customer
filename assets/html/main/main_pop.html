@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Shop GPT AI</title>
+  </head>
+  <body>
+    <div class="body-wrap basic">
+      <!-- header :: s -->
+      <header class="header">
+        <div class="header-wrap">
+          <button type="button" class="btn-menubar"><i class="icon-menubar"></i></button>
+          <a href="#" class="logo-mo"><img src="../../images/common/img_logo.png" alt="img-logo" /></a>
+          <button type="button" class="btn-question-mo"><i class="icon-plus"></i></button>
+          <div class="profile">
+            <div class="profile-img">
+              <!-- <img src="https:/picsum.photos/seed/people/200" alt="img-profile"> -->
+            </div>
+            <div class="user-name">
+              <span class="name">로그인</span>
+              <button type="button" class="btn-profile"><i class="icon-arrow-bottom"></i></button>
+            </div>
+          </div>
+
+          <!-- pop-profile :: s -->
+          <!-- 로그인시 pop-profile에 'login' 클래스 추가 -->
+          <div class="pop-profile">
+            <div class="pop-header">
+              <div class="profile-img">
+                <img src="https:/picsum.photos/seed/people/200" alt="img-profile" />
+              </div>
+              <span class="user-name">비로그인 상태입니다.</span>
+              <span class="user-name">내이름은김피dddddddfsfsf</span>
+            </div>
+            <div class="pop-body">
+              <ul class="pop-list">
+                <li class="list-item">
+                  <a href="#"><i class="icon-logout"></i>로그인</a>
+                </li>
+                <li class="list-item">
+                  <a href="#"><i class="icon-user"></i>프로필 설정</a>
+                </li>
+                <li class="list-item">
+                  <a href="#"><i class="icon-profile2"></i>비밀번호 설정</a>
+                </li>
+                <li class="list-item">
+                  <a href="#"><i class="icon-logout"></i>로그아웃</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- pop-profile :: e -->
+        </div>
+      </header>
+      <!-- header :: e -->
+
+      <!-- nav :: s -->
+      <nav class="nav-bar">
+        <div class="nav-header">
+          <a href="#" class="logo"><img src="../../images/common/img_logo.png" alt="img-logo" /></a>
+          <button type="button" class="btn-closed"><i class="icon-close"></i></button>
+        </div>
+        <div class="nav-body">
+          <button type="button" class="btn-question"><i class="icon-plus"></i>새로운 대화창 만들기</button>
+          <div class="nav-list">
+            <div class="list-title">
+              <span class="txt">최근 대화방</span>
+              <button type="button" class="btn-nav-list"><i class="icon-arrow-bottom"></i></button>
+            </div>
+          </div>
+          <div class="nav-list">
+            <div class="list-title">
+              <span class="txt">최근에 본 상품</span>
+              <button type="button" class="btn-nav-list"><i class="icon-arrow-bottom"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="info-policy">
+            <div class="txt-wrap">
+              <span class="copyright">Copyright ⓒ Infinitum. All rights reserved.</span>
+              <span class="policy">이용약관</span>
+              <span class="policy">개인정보처리방침</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav :: e -->
+
+      <!-- main :: s -->
+      <main class="main pop-wrap">
+        <div class="main-wrap">
+          <!-- 프로필 설정 팝업 :: s  -->
+          <button type="button" class="btns btn-modal-open" data-bs-toggle="modal" data-bs-target="#pop-profile-setting">프로필 설정</button>
+          <!-- Modal -->
+          <div class="modal fade pop-profile-setting" id="pop-profile-setting" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title">프로필 설정</h1>
+                  <div class="desc">
+                    <ul>
+                      <li class="list">프로필 이미지와 닉네임을 등록 및 수정할 수 있습니다.</li>
+                      <li class="list">이미지 영역을 클릭 하시면, 이미지를 업데이트 및 수정하실 수 있습니다.</li>
+                      <li class="list">닉네임은 한글 16자까지 입력할 수 있습니다.</li>
+                      <li class="list">미풍양속에 저해되는 이미지와 닉네임은 예고없이 삭제 및 초기화 될 수 있습니다.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="profile">
+                    <div class="profile-img">
+                      <!-- <img src="https:/picsum.photos/seed/people/200" alt="img-profile"> -->
+                    </div>
+                    <button type="button" class="btn-edit-profile-img"></button>
+                  </div>
+                  <div class="inputbox">
+                    <span class="txt">닉네임</span>
+                    <input type="text" placeholder="한글 16자리 이하로 입력해 주세요." />
+                  </div>
+                  <a href="#" class="btn-reset withdrawal">회원탈퇴</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btns btn-closed" data-bs-dismiss="modal">취소</button>
+                  <button type="button" class="btns btn-save">저장</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 설정 팝업 :: e  -->
+
+          <!-- 비밀번호 설정 팝업 :: s  -->
+          <button type="button" class="btns btn-modal-open" data-bs-toggle="modal" data-bs-target="#pop-password-edit">비밀번호 설정</button>
+          <!-- Modal -->
+          <div class="modal fade pop-password-edit" id="pop-password-edit" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title">비밀번호 설정</h1>
+                  <div class="desc">
+                    KAKAO, NAVER, Apple 간편 회원가입 회원께서는, 해당 사이트에서 계정정보를 설정 해주시기 바랍니다.<br />
+                    본 메뉴는 e-mail ID로 회원가입 하신 고객께만 해당됩니다.
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="inputbox">
+                    <span class="txt">현재 비밀번호</span>
+                    <input type="password" placeholder="현재 비밀번호를 입력해 주세요." />
+                  </div>
+                  <div class="inputbox">
+                    <span class="txt">새 비밀번호</span>
+                    <input type="password" placeholder="영문/숫자/특수문자 조합 최소8자리 이상" />
+                  </div>
+                  <div class="inputbox">
+                    <span class="txt">새 비밀번호 확인</span>
+                    <input type="password" placeholder="새 비밀번호를 한번 더 입력해 주세요." />
+                  </div>
+                  <a href="#" class="btn-reset withdrawal">비밀번호 초기화</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btns btn-closed" data-bs-dismiss="modal">취소</button>
+                  <button type="button" class="btns btn-save">저장</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 비밀번호 설정 팝업 :: e  -->
+
+          <!-- 비밀번호 초기화(클릭시) 알림 팝업 :: s  -->
+          <button type="button" class="btns btn-modal-open" data-bs-toggle="modal" data-bs-target="#pop-password-reset-alert">비밀번호 초기화 알림</button>
+          <!-- Modal -->
+          <div class="modal fade pop-password-reset-alert" id="pop-password-reset-alert" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                  <div class="desc">등록하신 e-mail ID의 주소로 인증 메일을 받고 본인 확인을 거치신 후 비밀번호를 초기화 및 변경합니다.</div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btns btn-closed" data-bs-dismiss="modal">닫기</button>
+                  <button type="button" class="btns btn-receive">인증 메일 받기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 비밀번호 초기화(클릭시) 알림 팝업 :: e  -->
+
+          <!-- 비밀번호 초기화 팝업 :: s  -->
+          <button type="button" class="btns btn-modal-open" data-bs-toggle="modal" data-bs-target="#pop-password-reset">비밀번호 초기화</button>
+          <!-- Modal -->
+          <div class="modal fade pop-password-reset" id="pop-password-reset" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title">비밀번호 초기화</h1>
+                  <div class="desc">
+                    KAKAO, NAVER, Apple 간편 회원가입 회원께서는, 해당 사이트에서 계정정보를 설정 해주시기 바랍니다.<br />
+                    본 메뉴는 e-mail ID로 회원가입 하신 고객께만 해당됩니다.
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="inputbox">
+                    <span class="txt">새 비밀번호</span>
+                    <input type="password" placeholder="영문/숫자/특수문자 조합 최소8자리 이상" />
+                  </div>
+                  <div class="inputbox">
+                    <span class="txt">새 비밀번호 확인</span>
+                    <input type="password" placeholder="새 비밀번호를 한번 더 입력해 주세요." />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btns btn-closed" data-bs-dismiss="modal">취소</button>
+                  <button type="button" class="btns btn-save">저장</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 비밀번호 초기화 팝업 :: e  -->
+        </div>
+      </main>
+      <!-- main :: e -->
+
+      <!-- footer :: s -->
+      <footer class="footer">
+        <div class="footer-wrap">
+          <div class="inputbox">
+            <input type="text" placeholder="패션/의류 상품에 대해 자유롭게 요청 해보세요" />
+            <button type="button" class="btn-input"></button>
+          </div>
+          <div class="info-policy">
+            <p class="worning">SHOP GPT가 부정확하거나 불쾌감을 주는 정보를 표시할 수 있으며, 이는 INFINITUM의 입장을 대변하지 않습니다.</p>
+            <div class="txt-wrap">
+              <span class="copyright">Copyright ⓒ Infinitum. All rights reserved.</span>
+              <a href="#" class="policy">이용약관</a>
+              <a href="#" class="policy">개인정보처리방침</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer :: e -->
+    </div>
+
+    <!-- script -->
+    <script src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../js/common.js"></script>
+  </body>
+</html>

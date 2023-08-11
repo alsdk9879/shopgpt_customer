@@ -1,0 +1,48 @@
+@import url('../fonts/hri_iconset.css');
+
+$header-height: 4.375rem;
+$header-height-mo: 3.5rem;
+$nav-width: 16.875rem;
+$footer-height: 11.175rem;
+$footer-height-chat: 14.3625rem;
+$footer-height-mo: 7.55rem;
+$footer-height-chat-mo: 10.7375rem;
+
+html,
+body {
+  scrollbar-color: #888 transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: .625rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 576.98px) {
+}

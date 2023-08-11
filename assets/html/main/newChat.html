@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>Shop GPT AI</title>
+</head>
+<body>
+  <div class="body-wrap">
+    <!-- header :: s -->
+    <header class="header">
+      <div class="header-wrap">
+        <button type="button" class="btn-menubar"><i class="icon-menubar"></i></button>
+        <a href="#" class="logo-mo"><img src="../../images/common/img_logo.png" alt="img-logo"></a>
+        <button type="button" class="btn-question-mo"><i class="icon-plus"></i></button>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="https:/picsum.photos/seed/people/200" alt="img-profile">
+          </div>
+          <div class="user-name">
+            <span class="name">김피티</span>
+            <button type="button" class="btn-profile"><i class="icon-arrow-bottom"></i></button>
+          </div>
+        </div>
+
+        <!-- pop-profile :: s -->
+        <!-- 로그인시 pop-profile에 'login' 클래스 추가 -->
+        <div class="pop-profile">
+          <div class="pop-header">
+            <div class="profile-img">
+              <img src="https:/picsum.photos/seed/people/200" alt="img-profile">
+            </div>
+            <span class="user-name">비로그인 상태입니다.</span>
+            <span class="user-name">내이름은김피dddddddfsfsf</span>
+          </div>
+          <div class="pop-body">
+            <ul class="pop-list">
+              <li class="list-item"><a href="#"><i class="icon-logout"></i>로그인</a></li>
+              <li class="list-item"><a href="#"><i class="icon-user"></i>프로필 설정</a></li>
+              <li class="list-item"><a href="#"><i class="icon-profile2"></i>비밀번호 설정</a></li>
+              <li class="list-item"><a href="#"><i class="icon-logout"></i>로그아웃</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- pop-profile :: e -->
+
+      </div>
+    </header>
+    <!-- header :: e -->
+
+    <!-- nav :: s -->
+    <nav class="nav-bar">
+      <div class="nav-header">
+        <a href="#" class="logo"><img src="../../images/common/img_logo.png" alt="img-logo"></a>
+        <button type="button" class="btn-closed"><i class="icon-close"></i></button>
+      </div>
+      <div class="nav-body">
+        <button type="button" class="btn-question"><i class="icon-plus"></i>새로운 대화창 만들기</button>
+        <div class="nav-list open">
+          <div class="list-title">
+            <span class="txt">최근 대화방</span>
+            <button type="button" class="btn-nav-list"><i class="icon-arrow-bottom"></i></button>
+          </div>
+          <div class="list-cont">
+            <ul class="recent-question">
+              <li class="list-item">
+                <a href="#">
+                  <p class="question-ment">장마철에 신을 가벼운 레인부츠 추천해줘</p>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#">
+                  <p class="question-ment">장마철에 신을 가벼운 레인부츠 추천해줘</p>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#">
+                  <p class="question-ment">장마철에 신을 가벼운 레인부츠 추천해줘</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="list-title">
+            <span class="txt">최근에 본 상품</span>
+            <button type="button" class="btn-nav-list"><i class="icon-arrow-bottom"></i></button>
+          </div>
+          <div class="list-cont">
+            <div class="swiper recent-view-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                  <a href="#" class="item">
+                    <div class="product-img">
+                      <img src="https://picsum.photos/200/300" alt="img-recent-view">
+                    </div>
+                    <p class="product-name">남녀공용 레인부츠 패션장화 미들부츠 방수장화</p>
+                  </a>
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-footer">
+        <div class="info-policy">
+          <div class="txt-wrap">
+            <span class="copyright">Copyright ⓒ Infinitum. All rights reserved.</span>
+            <span class="policy">이용약관</span>
+            <span class="policy">개인정보처리방침</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav :: e -->
+
+    <!-- main :: s -->
+    <main class="main chat">
+      <div class="main-wrap">
+        <div class="containers">
+          <!-- 사용자 질문 :: s -->
+          <div class="chatbox question">
+            <div class="txt-area">
+              <div class="profile-img">
+                <img src="https:/picsum.photos/seed/people/200" alt="img-profile">
+              </div>
+              <p class="chat-txt">집에서 편하게 입을 홈웨어 원피스 추천해줘</p>
+            </div>
+          </div>
+          <!-- 사용자 질문 :: e -->
+          <!-- 관리자 답변 :: s -->
+          <div class="chatbox answer">
+            <div class="txt-area">
+              <div class="profile-img manager"><span class="hide">관리자 프로필</span></div>
+              <p class="chat-txt">네 알겠습니다. 아래와 같은 상품을 찾았습니다.</p>
+            </div>
+            <!-- 상품을 찾아주는 답변시 포함 :: s -->
+            <div class="found-product">
+              <div class="swiper found-product-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">제이엘프</span>
+                        <h5 class="product-name">빅사이즈 5부 반팔 스트라이프 원피스 파자마 오버핏 홈웨어 편안한 부드러운 잠옷 어나더뷰</h5>
+                        <div class="price">
+                          <span class="list-price">24,800원</span>
+                          <span class="sale-price">19,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="product">
+                      <div class="product-img">
+                        <img src="https:/picsum.photos/seed/people/200" alt="">
+                      </div>
+                      <div class="product-info">
+                        <span class="brand">육육걸즈</span>
+                        <h5 class="product-name">지지미 체크 반팔 여름 원피스 잠옷 홈웨어</h5>
+                        <div class="price">
+                          <span class="list-price">54,000원</span>
+                          <span class="sale-price">39,800원</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 상품을 찾아주는 답변시 포함 :: e -->
+          </div>
+          <!-- 관리자 답변 :: e -->
+
+          <div class="chatbox question">
+            <div class="txt-area">
+              <div class="profile-img">
+                <img src="https:/picsum.photos/seed/people/200" alt="img-profile">
+              </div>
+              <p class="chat-txt">내일 날씨 알려줘</p>
+            </div>
+          </div>
+          <div class="chatbox answer">
+            <div class="txt-area">
+              <div class="profile-img manager"><span class="hide">관리자 프로필</span></div>
+              <p class="chat-txt">죄송합니다. 다시 질문해주세요.</p>
+            </div>
+          </div>
+
+          <div class="chatbox question">
+            <div class="txt-area">
+              <div class="profile-img">
+                <img src="https:/picsum.photos/seed/people/200" alt="img-profile">
+              </div>
+              <p class="chat-txt">홈웨어 원피스 가격 3만원 미만 상품으로 알려줘</p>
+            </div>
+          </div>
+          <div class="chatbox answer">
+            <div class="txt-area">
+              <div class="profile-img manager"><span class="hide">관리자 프로필</span></div>
+              <p class="chat-txt">잠시 오류가 발생했어요. 잠시 뒤에 다시 시도해주세요.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <!-- main :: e -->
+
+    <!-- footer :: s -->
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="btn-new-product"><button type="button">새로운 상품 찾을래</button></div>
+        <div class="inputbox">
+          <input type="text" placeholder="이어서 질문하기가 가능해요! 대화하듯이 요청해보세요.">
+          <button type="button" class="btn-input"></button>
+        </div>
+        <div class="info-policy">
+          <p class="worning">SHOP GPT가 부정확하거나 불쾌감을 주는 정보를 표시할 수 있으며, 이는 INFINITUM의 입장을 대변하지 않습니다.</p>
+          <div class="txt-wrap">
+            <span class="copyright">Copyright ⓒ Infinitum. All rights reserved.</span>
+            <a href="#" class="policy">이용약관</a>
+            <a href="#" class="policy">개인정보처리방침</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer :: e -->
+  </div>
+  
+  <!-- script -->
+  <script src="../../libs/swiper/swiper-bundle.min.js"></script>
+  <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="../../js/common.js"></script>
+</body>
+</html>
