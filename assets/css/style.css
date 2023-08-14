@@ -1998,7 +1998,7 @@ body.login-content {
 .body-wrap .login-wrap.join .btn-underline a:first-child::after {
   content: none;
 }
-.body-wrap .login-wrap.join-default {
+.body-wrap .login-wrap.join-default .containers-s {
   padding-top: 10rem;
 }
 .body-wrap .login-wrap.join-default .info-policy {
