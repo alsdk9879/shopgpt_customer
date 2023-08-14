@@ -506,7 +506,7 @@ body.login-content {
   overflow: hidden;
   border: 1px solid #e7e7e7;
   position: relative;
-  background: #fff url("../images/common/icon_img.png") center/1rem no-repeat;
+  background: #fff url("../images/common/icon_img_none.png") center/1rem no-repeat;
 }
 .body-wrap .nav-bar .nav-body .nav-list .recent-view-slider .item .product-img img {
   width: 100%;
@@ -1502,18 +1502,7 @@ body.login-content {
   line-height: 0;
   padding-top: 100%;
   position: relative;
-  background-color: #fff;
-}
-.main.chat .main-wrap .chatbox .found-product .product .product-img::before {
-  content: "\e937";
-  font-family: "hri_iconset";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -30%);
-          transform: translate(-50%, -30%);
-  font-size: 1rem;
+  background: #fff url("../images/common/icon_img_none.png") center/1rem no-repeat;
 }
 .main.chat .main-wrap .chatbox .found-product .product .product-img img {
   width: 100%;
