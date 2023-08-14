@@ -1631,6 +1631,8 @@ body.login-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  top: 2.3622rem;
 }
 .body-wrap .login-wrap .logo {
   width: 17.8125rem;
@@ -1865,7 +1867,8 @@ body.login-content {
 }
 @media (max-height: 899.98px) {
   .body-wrap .login-wrap .containers-s {
-    padding-top: 7.25rem !important;
+    padding-top: 7.5rem !important;
+    top: 0;
   }
 }
 .body-wrap .login-wrap.find-account .title {
@@ -1988,7 +1991,7 @@ body.login-content {
   content: none;
 }
 .body-wrap .login-wrap.join-default .containers-s {
-  padding-top: 10rem;
+  padding-top: 7.6378rem;
 }
 .body-wrap .login-wrap.join-default .info-policy {
   margin-top: 9.6719rem;
