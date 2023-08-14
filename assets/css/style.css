@@ -1921,9 +1921,6 @@ body.login-content {
 /*
 * responsive
 */
-.body-wrap .login-wrap.join .containers-s {
-  padding-top: 10rem;
-}
 .body-wrap .login-wrap.join .agree-terms {
   margin-top: 1.875rem;
   text-align: left;
