@@ -3,7 +3,6 @@
 */
 
 const bodyWrap = document.querySelector('.body-wrap');
-const header = document.querySelector('.header');
 const btnMenuBar = document.querySelector('.header .btn-menubar');
 const btnOpenProfile = document.querySelector('.profile');
 const btnProfile = document.querySelector('.profile .btn-profile');
@@ -13,12 +12,6 @@ btnMenuBar && btnMenuBar.addEventListener('click', () => {
   bodyWrap.classList.toggle('nav-open');
   popProfile.classList.remove('open');
 });
-
-header && header.addEventListener('click', () => {
-  bodyWrap.classList.toggle('nav-open');
-  popProfile.classList.remove('open');
-});
-
 
 
 /**
