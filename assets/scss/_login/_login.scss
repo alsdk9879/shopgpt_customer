@@ -5,7 +5,10 @@
   
     .containers-s {
       min-height: calc(100vh - 4.7244rem);
-      padding-top: 12.805rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   
     .logo {
@@ -239,13 +242,10 @@
         }
       }
     }
+  }
 
-    &.join-type {
-      .containers-s {
-        padding-top: 18.4612rem;
-      }
-    }
-
+  .login-wrap,
+  .modal {
     .invalid-feedback {
       text-align: left;
       font-size: .875rem;

@@ -1,6 +1,10 @@
 .body-wrap {
   .login-wrap {
     &.join {
+      .containers-s {
+        padding-top: 10rem;
+      }
+
       .agree-terms {
         margin-top: 1.875rem;
         text-align: left;
@@ -73,6 +77,11 @@
 
         .authentication {
           margin-top: .5rem;
+          display: none;
+
+          &.show {
+            display: block;
+          }
 
           .btn-resend {
             margin-top: .5rem;

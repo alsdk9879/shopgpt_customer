@@ -117,6 +117,14 @@ $modal-lg-height: 34.8125rem;
       }
     }
   }
+
+  .inputbox {
+    &.is-invalid {
+      .invalid-feedback {
+        display: block;
+      }
+    }
+  }
 }
 
 .pop-wrap {

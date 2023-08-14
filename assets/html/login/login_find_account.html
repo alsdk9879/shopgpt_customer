@@ -28,9 +28,11 @@
             </ul>
             <div class="tab-cont-wrap">
               <div class="tab-cont active">
-                <div class="inputbox">
+                <!-- validation check :: 에러시 'inputbox' 클래스에 'is-invalid' 클래스 할당 -->
+                <div class="inputbox is-invalid" id="validationSubEmail">
                   <span class="txt">보조 이메일</span>
                   <input type="email" placeholder="보조 이메일 주소를 입력해 주세요.">
+                  <div id="validationSubEmail" class="invalid-feedback">회원 정보가 존재하지 않습니다.<br>회원가입 또는 비회원 이용, ID 찾기 등을 해주시기 바랍니다.</div>
                 </div>
                 <p class="desc">
                   회원가입 시 입력하신 보조 e-mail 주소로 e-mail ID 정보를 보내드립니다. 
@@ -39,9 +41,10 @@
                 </p>
               </div>
               <div class="tab-cont">
-                <div class="inputbox">
+                <div class="inputbox is-invalid" id="validationSubEmail">
                   <span class="txt">이메일 ID</span>
                   <input type="email" placeholder="이메일 주소를 입력해 주세요.">
+                  <div id="validationSubEmail" class="invalid-feedback">회원 정보가 존재하지 않습니다.<br>회원가입 또는 비회원 이용, ID 찾기 등을 해주시기 바랍니다.</div>
                 </div>
                 <p class="desc">
                   입력하신 e-mail 주소로 2시간 동안 사용 가능한 임시비밀번호를 보내드립니다. 

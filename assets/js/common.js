@@ -7,6 +7,7 @@ const btnMenuBar = document.querySelector('.header .btn-menubar');
 
 btnMenuBar && btnMenuBar.addEventListener('click', () => {
   bodyWrap.classList.toggle('nav-open');
+  popProfile.classList.remove('open');
 });
 
 

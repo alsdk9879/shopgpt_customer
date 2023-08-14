@@ -19,7 +19,7 @@
           <button type="button" class="btn-question-mo"><i class="icon-plus"></i></button>
           <div class="profile">
             <div class="profile-img">
-              <!-- <img src="https:/picsum.photos/seed/people/200" alt="img-profile"> -->
+              <!-- <img src="https://picsum.photos/seed/people/200" alt="img-profile"> -->
             </div>
             <div class="user-name">
               <span class="name">로그인</span>
@@ -32,7 +32,7 @@
           <div class="pop-profile">
             <div class="pop-header">
               <div class="profile-img">
-                <img src="https:/picsum.photos/seed/people/200" alt="img-profile" />
+                <img src="https://picsum.photos/seed/people/200" alt="img-profile" />
               </div>
               <span class="user-name">비로그인 상태입니다.</span>
               <span class="user-name">내이름은김피dddddddfsfsf</span>
@@ -115,7 +115,7 @@
                 <div class="modal-body">
                   <div class="profile">
                     <div class="profile-img">
-                      <!-- <img src="https:/picsum.photos/seed/people/200" alt="img-profile"> -->
+                      <!-- <img src="https://picsum.photos/seed/people/200" alt="img-profile"> -->
                     </div>
                     <button type="button" class="btn-edit-profile-img"></button>
                   </div>
@@ -148,17 +148,21 @@
                   </div>
                 </div>
                 <div class="modal-body">
-                  <div class="inputbox">
+                  <!-- validation check :: 에러시 'inputbox' 클래스에 'is-invalid' 클래스 할당 -->
+                  <div class="inputbox is-invalid" id="validationPw">
                     <span class="txt">현재 비밀번호</span>
                     <input type="password" placeholder="현재 비밀번호를 입력해 주세요." />
+                    <div id="validationPw" class="invalid-feedback">비밀번호가 일치하지 않습니다.</div>
                   </div>
-                  <div class="inputbox">
+                  <div class="inputbox is-invalid" id="validationNewPw">
                     <span class="txt">새 비밀번호</span>
                     <input type="password" placeholder="영문/숫자/특수문자 조합 최소8자리 이상" />
+                    <div id="validationNewPw" class="invalid-feedback">비밀번호 설정 형식에 맞지 않습니다.</div>
                   </div>
-                  <div class="inputbox">
+                  <div class="inputbox is-invalid" id="validationVerifyPw">
                     <span class="txt">새 비밀번호 확인</span>
                     <input type="password" placeholder="새 비밀번호를 한번 더 입력해 주세요." />
+                    <div id="validationVerifyPw" class="invalid-feedback">앞서 입력한 비밀번호와 일치하지 않습니다.</div>
                   </div>
                   <a href="#" class="btn-reset withdrawal">비밀번호 초기화</a>
                 </div>
@@ -206,13 +210,16 @@
                   </div>
                 </div>
                 <div class="modal-body">
-                  <div class="inputbox">
+                  <!-- validation check :: 에러시 'inputbox' 클래스에 'is-invalid' 클래스 할당 -->
+                  <div class="inputbox is-invalid" id="validationNewPw">
                     <span class="txt">새 비밀번호</span>
                     <input type="password" placeholder="영문/숫자/특수문자 조합 최소8자리 이상" />
+                    <div id="validationNewPw" class="invalid-feedback">비밀번호 설정 형식에 맞지 않습니다.</div>
                   </div>
-                  <div class="inputbox">
+                  <div class="inputbox is-invalid" id="validationVerifyPw">
                     <span class="txt">새 비밀번호 확인</span>
                     <input type="password" placeholder="새 비밀번호를 한번 더 입력해 주세요." />
+                    <div id="validationVerifyPw" class="invalid-feedback">앞서 입력한 비밀번호와 일치하지 않습니다.</div>
                   </div>
                 </div>
                 <div class="modal-footer">

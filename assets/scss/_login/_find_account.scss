@@ -1,10 +1,6 @@
 .body-wrap {
   .login-wrap {
     &.find-account {
-      .containers-s {
-        padding-top: 15.8987rem;
-      }
-
       .title {
         color: #222;
       }
@@ -54,6 +50,14 @@
             &::after {
               content: none;
             }
+          }
+        }
+      }
+
+      .inputbox {
+        &.is-invalid {
+          .invalid-feedback {
+            display: block;
           }
         }
       }
