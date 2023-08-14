@@ -4,6 +4,9 @@
 
 const bodyWrap = document.querySelector('.body-wrap');
 const btnMenuBar = document.querySelector('.header .btn-menubar');
+const btnOpenProfile = document.querySelector('.profile');
+const btnProfile = document.querySelector('.profile .btn-profile');
+const popProfile = document.querySelector('.pop-profile');
 
 btnMenuBar && btnMenuBar.addEventListener('click', () => {
   bodyWrap.classList.toggle('nav-open');
@@ -15,12 +18,9 @@ btnMenuBar && btnMenuBar.addEventListener('click', () => {
  * header :: pop-profile
 */
 
-const btnOpenProfile = document.querySelector('.profile');
-const btnProfile = document.querySelector('.profile .btn-profile');
-const popProfile = document.querySelector('.pop-profile');
-
 btnOpenProfile && btnOpenProfile.addEventListener('click', (event) => {
   event.currentTarget.nextElementSibling.classList.toggle('open');
+  bodyWrap.classList.remove('nav-open');
   
   if(event.currentTarget.nextElementSibling.classList.contains('open')) {
     btnProfile.style.transform = 'rotate('+ -180+'deg)';
