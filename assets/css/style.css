@@ -1844,6 +1844,7 @@ body.login-content {
 @media (max-width: 576.98px) {
   .body-wrap .login-wrap .containers-s {
     min-height: calc(100vh - 6.9494rem);
+    top: 3.4747rem;
   }
   .body-wrap .login-wrap .info-policy {
     position: static;
